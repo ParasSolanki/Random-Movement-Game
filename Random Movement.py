@@ -28,15 +28,7 @@ SMALL_FONT = pygame.font.SysFont('Times New Roman', 24)
 class RandomMovementGame:
 	def __init__(self):
 		self.playerScore = []
-		self.labelList = ["Developed By:",
-		                  "Jeet Dhanesha", 
-		                  "9428846339", 
-		                  "EC-SEM_6",
-		                  "&", 
-		                  "Paras Solanki", 
-		                  "9499808387",
-		                  "EC-SEM_6"
-		                 ]
+		
 		self.computer = pygame.image.load('quit.png')
 		self.player = pygame.image.load('correct.png')
 		self.sound = pygame.mixer.Sound("beep.wav")
@@ -50,9 +42,9 @@ class RandomMovementGame:
 		flying_solo_text = SMALL_FONT.render("The Flying Solo", True, WHITE)
 		screen.blit(flying_solo_text,(12, 150))
 
-		for num, line in enumerate(self.labelList):
-			text = SMALL_FONT.render(line, True, WHITE)
-			screen.blit(text, (10, 480+30*num))
+		
+		
+
 
 	def startingScreen(self):
 		current_time = pygame.time.get_ticks()/1000
