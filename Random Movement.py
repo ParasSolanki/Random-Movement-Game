@@ -17,7 +17,7 @@ YELLOW = (255,255,0)
 
 pygame.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption('Random Motion Game!')
+pygame.display.set_caption('Random Movement Game!')
 clock = pygame.time.Clock()
 
 pygame.font.init()
